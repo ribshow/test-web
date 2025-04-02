@@ -21,7 +21,7 @@ npm run dev
 ```
 
 **Ou se preferir pode acessá-lo no endereço web abaixo:**
-(https://ribshow.github.io/test-web)
+(https://test-web-ruby.vercel.app/)
 
 ## 📋 Descrição do Teste
 

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [tailwindcss()],
   base: "/test-web/",
   build: {
-    outDir: "./dist",
-    assetsDir: "./assets",
+    outDir: "dist",
+    assetsDir: "assets",
   },
 });

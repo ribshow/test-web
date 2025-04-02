@@ -1,7 +1,32 @@
-# Teste Prático - Estágio de Programação Web
+# Teste Prático - Estágio de Programação
+
+## Como executar o projeto:
+
+**1°Faça o clone do repositório remoto em sua máquina:**
+
+```bash
+git clone https://github.com/ribshow/test-web.git
+```
+
+**2°Instale as dependências necessárias:**
+
+```bash
+npm install
+```
+
+**3°Execute o projeto:**
+
+```bash
+npm run dev
+```
+
+**Ou se preferir pode acessá-lo no endereço web abaixo:**
+(https://ribshow.github.io/test-web)
 
 ## 📋 Descrição do Teste
+
 Você deve criar uma **página web simples** que contenha:
+
 - Um formulário de cadastro com os seguintes campos:
   - **Nome**
   - **E-mail**
@@ -9,13 +34,13 @@ Você deve criar uma **página web simples** que contenha:
 - Um botão de submit que exiba os dados preenchidos em um alerta (popup) ao clicar.
 
 - Exemplo:
-  
-![Screenshot 2025-04-01 at 16 24 49](https://github.com/user-attachments/assets/6ba08daa-a5be-459f-abc2-a28a021d3ac8)
 
+![Screenshot 2025-04-01 at 16 24 49](https://github.com/user-attachments/assets/6ba08daa-a5be-459f-abc2-a28a021d3ac8)
 
 ---
 
 ## 🚩 Requisitos
+
 - A página deve ser **responsiva** (funcionar bem em celular e desktop).
 - Os dados do formulário devem ser exibidos em um `alert()`
 
@@ -39,4 +64,5 @@ Você deve criar uma **página web simples** que contenha:
 5. Envie o link do seu repositório GitHub para avaliação.
 
 ---
+
 Boa sorte e bom trabalho! 🚀

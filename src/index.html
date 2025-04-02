@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Teste Integrale</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <section class="w-full h-screen flex flex-col justify-center items-center bg-neutral-900">
+        <div class="flex flex-col justify-center p-2">
+            <div class="border border-neutral-700 w-[300px] h-[500px] md:w-[450px] md:h-[500px] rounded-lg">
+                <h1 class="text-orange-500 text-center font-semibold p-4">Cadastre-se aqui:</h1>
+                <div class="flex flex-col items-center h-full">
+                    <form id="form-register" method="post"
+                        class="flex flex-col items-center justify-center mt-8 gap-8 p-2">
+                        <div class="w-[280px]">
+                            <label for="name" class="text-gray-100 font-semibold flex flex-row gap-2">Nome <i
+                                    data-lucide="user" class="text-orange-500"></i></label>
+                            <input type="text" name="name" id="name" placeholder="Insira seu nome..."
+                                class="w-full h-[40px] rounded-md p-2 bg-neutral-800 text-white border border-neutral-700 focus:outline-none focus:border-orange-500"
+                                required />
+                        </div>
+
+                        <div class="w-full">
+                            <label for="email" class="text-gray-100 font-semibold flex flex-row gap-2">Email <i
+                                    data-lucide="mail" class="text-orange-500"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Insira seu email..."
+                                class="w-full h-[40px] rounded-md p-2 bg-neutral-800 text-white border border-neutral-700 focus:outline-none focus:border-orange-500"
+                                required />
+                        </div>
+
+                        <div class="w-full">
+                            <label for="email" class="text-gray-100 font-semibold flex flex-row gap-2">Senha <i
+                                    data-lucide="key" class="text-orange-500"></i></label>
+                            <input type="password" name="password" id="password" placeholder="Insira sua senha..."
+                                class="w-full h-[40px] rounded-md p-2 bg-neutral-800 text-white border border-neutral-700 focus:outline-none focus:border-orange-500"
+                                required />
+                        </div>
+
+                        <button type="submit"
+                            class="w-full h-[40px] font-semibold rounded-md p-2 bg-orange-600 text-white hover:bg-orange-700 hover:cursor-pointer transition duration-300">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Pop-up (inicialmente oculto) -->
+            <div id="popup" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-90 hidden">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-[400px] text-center">
+                    <h2 class="text-lg font-semibold">Dados enviados:</h2>
+                    <p id="popup-content" class="text-gray-800 mt-2"></p>
+                    <button onclick="closePopup()"
+                        class="mt-4 px-4 py-2 bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-700 hover:cursor-pointer transition">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

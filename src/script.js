@@ -20,6 +20,7 @@ document
   });
 
 // fechar o pop-up
-function closePopup() {
+
+window.closePopup = function () {
   document.getElementById("popup").classList.add("hidden");
-}
+};
